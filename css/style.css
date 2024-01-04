@@ -117,6 +117,7 @@ picture {
 .content__text {
   line-height: 1.5625rem;
   margin-bottom: 2.5rem;
+  opacity: 0.75;
 }
 
 .content__stats {
