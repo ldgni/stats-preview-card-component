@@ -3,7 +3,7 @@
   --clr-main-bg: #1b1937;
   --clr-text: #fff;
 
-  --ff-base: "Inter", sans-serif;
+  --ff-primary: "Inter", sans-serif;
   --ff-secondary: "Lexend Deca", sans-serif;
   --fs-base: 0.9375rem;
   --fw-base: 400;
@@ -63,7 +63,7 @@ ul {
 
 body {
   background-color: var(--clr-bg);
-  font-family: var(--ff-base);
+  font-family: var(--ff-primary);
   font-size: var(--fs-base);
   font-weight: var(--fw-base);
   color: var(--clr-text);
