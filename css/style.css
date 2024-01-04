@@ -159,6 +159,7 @@ picture {
   }
 
   .content__text {
+    max-width: 40ch;
     margin-bottom: 4.5rem;
   }
 
