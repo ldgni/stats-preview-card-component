@@ -1,0 +1,168 @@
+:root {
+  --clr-bg: #0a0c1c;
+  --clr-main-bg: #1b1937;
+  --clr-text: #fff;
+
+  --ff-base: "Inter", sans-serif;
+  --ff-secondary: "Lexend Deca", sans-serif;
+  --fs-base: 0.9375rem;
+  --fw-base: 400;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-Regular.woff2") format("woff2"),
+    url("../assets/fonts/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Inter-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lexend Deca";
+  src: url("../assets/fonts/LexendDeca-Regular.woff2") format("woff2"),
+    url("../assets/fonts/LexendDeca-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* GENERAL */
+
+body {
+  background-color: var(--clr-bg);
+  font-family: var(--ff-base);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-base);
+  color: var(--clr-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5.5rem 1.5rem;
+  min-height: 100vh;
+}
+
+/* MAIN */
+
+main {
+  background-color: var(--clr-main-bg);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.2);
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 69.375rem;
+}
+
+picture {
+  background-color: #ab5cdb;
+}
+
+.picture__img {
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+  opacity: 0.7511;
+}
+
+.main__content {
+  text-align: center;
+  padding: 2rem;
+}
+
+.content__title {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.fancy {
+  color: #ab5cdb;
+}
+
+.content__text {
+  line-height: 1.5625rem;
+  margin-bottom: 2.5rem;
+}
+
+.content__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.stats__number {
+  font-size: 1.5rem;
+}
+
+.stats__category {
+  font-family: var(--ff-secondary);
+  font-size: 0.75rem;
+  line-height: 1.5625rem;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 43.75rem) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .main__content {
+    text-align: initial;
+    padding: 4.44rem 4.47rem 3.69rem 4.47rem;
+  }
+
+  .content__title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    margin-bottom: 1.56rem;
+  }
+
+  .content__text {
+    margin-bottom: 4.5rem;
+  }
+
+  .content__stats {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
