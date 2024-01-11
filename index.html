@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Stats Preview Card Component" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Stats Preview Card Component</title>
   </head>
@@ -12,36 +19,36 @@
     <main>
       <div class="main__content">
         <h1 class="content__title">
-          Get <span class="fancy">insights</span> that help your business grow.
+          Get <span class="title__highlight">insights</span> that help your
+          business grow.
         </h1>
         <p class="content__text">
           Discover the benefits of data analytics and make better decisions
           regarding revenue, customer experience, and overall efficiency.
         </p>
-        <ul class="content__stats">
-          <li>
+        <ul class="content__stats" role="list">
+          <li role="listitem">
             <h2 class="stats__number">10k+</h2>
             <p class="stats__category">Companies</p>
           </li>
-          <li>
+          <li role="listitem">
             <h2 class="stats__number">314</h2>
             <p class="stats__category">Templates</p>
           </li>
-          <li>
+          <li role="listitem">
             <h2 class="stats__number">12M+</h2>
             <p class="stats__category">Queries</p>
           </li>
         </ul>
       </div>
-      <picture>
+      <picture class="main__image">
         <source
-          srcset="assets/images/header-desktop-image.webp"
+          srcset="images/header-desktop-image.webp"
           media="(min-width: 43.75rem)"
         />
         <img
-          src="assets/images/header-mobile-image.webp"
+          src="images/header-mobile-image.webp"
           alt="People working in an office"
-          class="picture__img"
         />
       </picture>
     </main>
